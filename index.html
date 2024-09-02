@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notrinos.com</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"> </script>
+    <!--<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .alert{
+            background-color: #39FF00;
+            border-radius: 20px;
+            border: none;
+            padding: 10px;
+            display: none;
+            text-align: center;
+            
+        }
+     </style>
+</head>
+<body>
+<div class="alert" id="alert">You are offline...</div>
+    <script type="text/javascript" charset="utf-8">
+    document.addEventListener('DOMContentLoaded', function() {
+const Alert = document.getElementById('alert');
+    
+    if (navigator.onLine) {
+        
+       setTimeout(()=>{
+            window.location.href = 'https://Notrinos.com/fa'; 
+                    },2000);
+                    
+                } else {
+                   Alert.style.display = 'block';
+                    
+                }
+            });      
+    </script>
+</body>
+</html>
